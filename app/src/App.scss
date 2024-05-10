@@ -4,7 +4,7 @@
     overflow: hidden !important;
     #berry-1{
         position: absolute;
-        top: 52%;
+        top: 1500px;
         left: 6%;
         z-index: 2;
     }
@@ -23,7 +23,31 @@
     #berry-4{
         position: absolute;
         right: 20px;
-        top: 30%;
+        top: 900px;
+        z-index: 2;
+    }
+    #berry-5{
+        position: absolute;
+        right: 20px;
+        top: 3300px;
+        z-index: 2;
+    }
+    #leaf-1{
+        position: absolute;
+        right: 100px;
+        top: 2200px;
+        z-index: 2;
+    }
+    #leaf-2{
+        position: absolute;
+        left: 100px;
+        top: 2500px;
+        z-index: 2;
+    }
+    #leaf-3{
+        position: absolute;
+        left: 300px;
+        top: 3300px;
         z-index: 2;
     }
 }
