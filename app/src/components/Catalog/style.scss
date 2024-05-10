@@ -1,0 +1,60 @@
+@import '../../assets/styles/settings.scss';
+
+.catalog-wrapper {
+    @extend %margin-container;
+
+    .title {
+        p {
+            color: #2E363E;
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60px;
+            letter-spacing: -1px;
+        }
+        margin-bottom: 100px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .card {
+            overflow: hidden;
+            border-radius: 20px;
+            width: 90%;
+            
+            box-shadow: 1px 1px 3px #2e363e36;
+            .bottom {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                #bold-text {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 143%;
+                    color: #2E363E;
+                    text-wrap: nowrap;
+                }
+
+                #small-text {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    text-wrap: balance;
+                }
+            }
+            .yellow-button {
+                padding: 10px 20px;
+                font-size: 15px;
+
+            }
+        }
+    }
+}

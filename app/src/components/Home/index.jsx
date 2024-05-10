@@ -2,6 +2,13 @@ import './style.scss'
 import Tag from '../../assets/icons/tag.svg'
 import Phone from '../../assets/icons/phone.svg'
 function Home() {
+    function goToPath(path) {
+        const target = document.querySelector(path)
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        })
+    }
     return (<>
         <div className="home-wrapper">
             <div className="home">
@@ -41,7 +48,7 @@ function Home() {
                         Доставка на авто в холодильнике.
                     </p>
                     <div id='button-and-text'>
-                        <button className='yellow-button'><a href="#catalog"></a>Перейти в каталог</button> <p>9 различных <br /> видов на выбор</p>
+                        <button className='yellow-button' onClick={()=>{goToPath('# catalog')}}>Перейти в каталог</button> <p>9 различных <br /> видов на выбор</p>
                     </div>
                 </div>
             </div>
