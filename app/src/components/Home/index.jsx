@@ -48,7 +48,7 @@ function Home() {
                         Доставка на авто в холодильнике.
                     </p>
                     <div id='button-and-text'>
-                        <button className='yellow-button' onClick={()=>{goToPath('# catalog')}}>Перейти в каталог</button> <p>9 различных <br /> видов на выбор</p>
+                        <button className='yellow-button' onClick={()=>{goToPath('.catalog-wrapper')}}>Перейти в каталог</button> <p>9 различных <br /> видов на выбор</p>
                     </div>
                 </div>
             </div>

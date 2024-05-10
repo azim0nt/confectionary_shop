@@ -1,0 +1,29 @@
+@import './assets/styles/settings.scss';
+.app{
+    position: relative;
+    overflow: hidden !important;
+    #berry-1{
+        position: absolute;
+        top: 52%;
+        left: 6%;
+        z-index: 2;
+    }
+    #berry-2{
+        position: absolute;
+        left: 0;
+        top: 5%;
+        z-index: 2;
+    }
+    #berry-3{
+        position: absolute;
+        right: -50px;
+        top: 5%;
+        z-index: 2;
+    }
+    #berry-4{
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        z-index: 2;
+    }
+}
