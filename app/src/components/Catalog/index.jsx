@@ -12,11 +12,18 @@ import CatalogItem from '../../db/data.json'
 import { useState, useEffect} from 'react';
 import './style.scss';
 function Catalog() {
-    
+    function goToPath(path) {
+        const target = document.querySelector(path)
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        })
+    }
     const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9];    
     return ( <>
         <div className="catalog-wrapper">
-            <div className="title"><p>Для любых событий и дорогих вам людей </p></div>
+            <div className="catalog">
+                <div className="title"><p>Для любых событий и дорогих вам людей </p></div>
             <div className="cards">
                 {CatalogItem.map((item, index) => (
                     <div className="card" key={index}>
@@ -28,12 +35,14 @@ function Catalog() {
                         <p id='small-text'>{item.description}</p>
                         <p>{item.price} ₽/шт.</p>
                         <div>
-                        <button className='yellow-button'>Заказать</button>
+                        <button className='yellow-button' onClick={()=>{goToPath()}}>Заказать</button>
                         </div>
                         </div>
                     </div>
                 ))}
             </div>
+            </div>
+            
         </div>
     </>
  );

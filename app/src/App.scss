@@ -32,6 +32,12 @@
         top: 3300px;
         z-index: 2;
     }
+    #berry-6{
+        position: absolute;
+        right: 620px;
+        top: 4300px;
+        z-index: -1;
+    }
     #leaf-1{
         position: absolute;
         right: 100px;
@@ -49,5 +55,11 @@
         left: 300px;
         top: 3300px;
         z-index: 2;
+    }
+    #leaf-4{
+        position: absolute;
+        right: 320px;
+        top: 4300px;
+        z-index: -1;
     }
 }

@@ -6,9 +6,10 @@
     background: url('../../assets/images/bg.png')no-repeat;
     background-size: cover;
     background-position: center;
-
+    justify-content: center;
+    display: flex;
     .home {
-        @extend %margin-container;
+        width:125vh;
 
         header {
             height: 100px;

@@ -1,9 +1,12 @@
 @import '../../assets/styles/settings.scss';
 
 .catalog-wrapper {
-    @extend %margin-container;
-
-    .title {
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    .catalog{
+        width: 125vh;
+         .title {
         p {
             color: #2E363E;
             text-align: center;
@@ -20,6 +23,7 @@
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
         gap: 20px;
         .card {
             overflow: hidden;
@@ -56,5 +60,8 @@
 
             }
         }
+    } 
     }
+
+  
 }
