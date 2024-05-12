@@ -39,3 +39,42 @@
         }
     }
 }
+@media(max-width:650px) {
+    .consultation-wrapper{
+        .consultation{
+            width: 100vh;
+            justify-content: center;
+            
+            .right{
+                display: none;
+            }
+            .left{
+                .button1{
+                    text-align: center;
+
+                }
+                .button2{
+                    text-align: center;
+
+                }
+                justify-content: center;
+                .bold-text{
+                    font-size: 30px;
+                    line-height: normal;
+                    text-wrap: pretty;  
+                    text-align: center;
+                }
+                .list-text{
+                    ul{
+                        li{
+                            text-wrap: pretty;
+                            
+                            text-align: center;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

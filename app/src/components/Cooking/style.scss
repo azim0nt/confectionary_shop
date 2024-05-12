@@ -64,3 +64,37 @@
         z-index: 2;
     }
 }
+
+@media(max-width:620px){
+    .cooking-wrapper{
+
+            .body{  
+                width: 90vh;
+                .left{
+                    display: none;
+                }
+                .right{
+                    width: auto;
+                    left: 0;
+                    span{
+                        text-align: center;
+                    }
+                    #bold-text{
+                        font-size: 30px;
+                        line-height: normal;
+                        text-wrap: pretty;
+                        text-align: center;
+                    }
+                    #small-text{
+                        text-wrap: pretty;
+                        font-size: 18px;
+                        line-height: normal;
+                        text-align: center;
+                    }
+                    div{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }

@@ -94,6 +94,7 @@
             display: flex;
             gap: 40px;
             width: 100%;
+            
             #bold-text {
                 font-feature-settings: 'clig' off, 'liga' off;
                 font-family: Montserrat;
@@ -130,4 +131,56 @@
         }
     }
 
+}
+
+@media(max-width: 1270px){
+    .home-wrapper{
+        .home{
+            width: 100vh;
+        }
+    }
+}
+@media(max-width: 869px){
+    .home-wrapper{
+        .home{
+            header{
+                .nav{
+                    justify-content: center;
+                    .right{
+                        display: none;
+                    }
+                    .left{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:620px){
+    .home-wrapper{
+        .home{
+            .body{
+                gap: 20px;
+                span{
+                    text-align: center;
+                }
+                #bold-text{
+                    font-size: 30px;
+                    line-height: normal;
+                    text-align: center;
+                }
+                #small-text{
+                    font-size: 18px;
+                    line-height: normal;
+                    text-align: center;
+                }
+                #button-and-text{
+                    justify-content: center;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
 }

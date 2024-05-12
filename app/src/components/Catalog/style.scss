@@ -6,6 +6,9 @@
     display: flex;
     .catalog{
         width: 125vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
          .title {
         p {
             color: #2E363E;
@@ -24,7 +27,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
         .card {
             overflow: hidden;
             border-radius: 20px;
@@ -64,4 +69,22 @@
     }
 
   
+}
+@media(max-width:1120px){
+    .catalog-wrapper{
+        .catalog{
+            .cards{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+@media(max-width:640px){
+    .catalog-wrapper{
+        .catalog{
+            .cards{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
 }

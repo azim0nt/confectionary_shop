@@ -2,7 +2,8 @@
 .app{
     position: relative;
     overflow: hidden !important;
-    #berry-1{
+    .paralax-items{
+        #berry-1{
         position: absolute;
         top: 1500px;
         left: 6%;
@@ -61,5 +62,27 @@
         right: 320px;
         top: 4300px;
         z-index: -1;
+    }
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .app{
+        .paralax-items{
+            display: none;
+        }
+    }
+}
+@media (max-width: 1560px) {
+    .app{
+        .paralax-items{
+            #leaf-4{
+                display: none;
+            }
+            #berry-6{
+                display: none;
+            }
+        }
     }
 }

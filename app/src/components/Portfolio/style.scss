@@ -53,6 +53,19 @@
 @media(max-width:500px){
     .portfolio-wrapper{
         .portfolio{
+            .header{
+                .title{
+                    font-size: 30px;
+                    line-height: normal;
+                    text-wrap: pretty;
+                }
+                .desc{
+                    text-wrap: pretty;
+                    font-size: 18px;
+                    line-height: normal;
+                }
+                margin-bottom: 10px;
+            }
             .examples{
                 grid-template-columns: repeat(1, 1fr);
             }
