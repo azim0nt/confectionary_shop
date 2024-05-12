@@ -1,6 +1,13 @@
 import './style.scss'
 import Woman from '../../assets/images/woman.png'
 function Consultation() {
+    function goToPath(path) {
+        const target = document.querySelector(path)
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        })
+    }
     return (
         <>
             <div className="consultation-wrapper">
@@ -20,7 +27,7 @@ function Consultation() {
                             </ul>
                         </div>
                         <div className="button2">
-                            <button className="yellow-button">
+                            <button className="yellow-button" onClick={()=> goToPath('#contact')}>
                                 Задать вопрос
                             </button>
                         </div>

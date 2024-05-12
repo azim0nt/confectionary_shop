@@ -2,6 +2,13 @@ import './style.scss'
 import Fluid from '../../assets/images/fluid.png'
 import PhoneInHand from '../../assets/images/phone-in-hand.png'
 function Cooking(props) {
+    function goToPath(path) {
+        const target = document.querySelector(path)
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        })
+    }
     return ( <>
     <div className="cooking-wrapper">
         <div className="body">
@@ -16,7 +23,7 @@ function Cooking(props) {
             <p id="small-text">
             Загрузите фотографию или эскиз капкейков <br /> и мы рассчитаем стоимость за 30 минут
             </p>
-            <div><button className='yellow-button'>Заказать</button></div>
+            <div><button className='yellow-button' onClick={()=>{goToPath('#contact')}}>Заказать</button></div>
         </div>
         </div>
         <img src={Fluid} id='fluid' alt="" />

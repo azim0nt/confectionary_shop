@@ -39,6 +39,18 @@
         top: 4300px;
         z-index: -1;
     }
+    #berry-7{
+        position: absolute;
+        left: 200px;
+        top: 8250px;
+        z-index: 2;
+    }
+    #berry-8{
+        position: absolute;
+        right: 200px;
+        top: 7950px;
+        z-index: 2;
+    }
     #leaf-1{
         position: absolute;
         right: 100px;
@@ -63,8 +75,20 @@
         top: 4300px;
         z-index: -1;
     }
+    #leaf-5{
+        position: absolute;
+        left: 300px;
+        top: 7990px;
+        z-index: 2;
     }
-    
+    #leaf-6{
+        position: absolute;
+        right: 200px;
+        top: 8270px;
+        z-index: 2;
+    }
+}
+
 }
 
 @media (max-width: 1000px) {

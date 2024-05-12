@@ -35,7 +35,7 @@ function Catalog() {
                         <p id='small-text'>{item.description}</p>
                         <p>{item.price} ₽/шт.</p>
                         <div>
-                        <button className='yellow-button' onClick={()=>{goToPath()}}>Заказать</button>
+                        <button className='yellow-button' onClick={()=>{goToPath('#contact')}}>Заказать</button>
                         </div>
                         </div>
                     </div>
