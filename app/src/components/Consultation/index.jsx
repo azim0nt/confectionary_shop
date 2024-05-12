@@ -27,6 +27,7 @@ function Consultation() {
                     </div>
                     <div className="right">
                         <img src={Woman} width={'100%'} alt="" />
+                        
                     </div>
                 </div>
             </div>

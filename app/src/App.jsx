@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Catalog from "./components/Catalog";
 import Cooking from "./components/Cooking";
 import Consultation from "./components/Consultation";
+import Reviews from "./components/Reviews";
 import './App.scss'
 import Berry2 from './assets/images/berry2.png'
 import Berry1 from './assets/images/berry.png'
@@ -36,6 +37,7 @@ function App() {
       <Catalog />
       <Cooking paralax={bgStyle} />
       <Consultation />
+      <Reviews />
       <div className="paralax-items">
         <img src={Berry2} style={bgStyle} id="berry-2" alt="" />
         <img src={Berry1} style={bgStyle} id="berry-1" alt="" />
