@@ -1,0 +1,62 @@
+@import '../../assets/styles/settings.scss';
+
+.portfolio-wrapper {
+    padding-top: 100px;
+    background-color: transparent;
+
+    .portfolio {
+        .header {
+            .title {
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 60px;
+                letter-spacing: -1px;
+                color: #2e363e;
+            }
+            
+            .desc {
+                color: #2e363e;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 143%;
+            }
+            margin-bottom: 50px;
+        }
+        .examples{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+@media(max-width:950px){
+    .portfolio-wrapper{
+        .portfolio{
+            .examples{
+                grid-template-columns: repeat(2, 1fr);
+            }
+ 
+        }
+    }
+}
+@media(max-width:500px){
+    .portfolio-wrapper{
+        .portfolio{
+            .examples{
+                grid-template-columns: repeat(1, 1fr);
+            }
+ 
+        }
+    }
+}

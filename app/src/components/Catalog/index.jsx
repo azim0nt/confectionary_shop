@@ -1,15 +1,15 @@
-import Image1 from '../../assets/images/1.png';
-import Image2 from '../../assets/images/2.png';
-import Image3 from '../../assets/images/3.png';
-import Image4 from '../../assets/images/4.png';
-import Image5 from '../../assets/images/5.png';
-import Image6 from '../../assets/images/6.png';
-import Image7 from '../../assets/images/7.png';
-import Image8 from '../../assets/images/8.png';
-import Image9 from '../../assets/images/9.png';
-import Berry from '../../assets/images/berry.png';
+import Image1 from '../../assets/images/catalog-images/1.png';
+import Image2 from '../../assets/images/catalog-images/2.png';
+import Image3 from '../../assets/images/catalog-images/3.png';
+import Image4 from '../../assets/images/catalog-images/4.png';
+import Image5 from '../../assets/images/catalog-images/5.png';
+import Image6 from '../../assets/images/catalog-images/6.png';
+import Image7 from '../../assets/images/catalog-images/7.png';
+import Image8 from '../../assets/images/catalog-images/8.png';
+import Image9 from '../../assets/images/catalog-images/9.png';
+
 import CatalogItem from '../../db/data.json'
-import { useState, useEffect} from 'react';
+
 import './style.scss';
 function Catalog() {
     function goToPath(path) {

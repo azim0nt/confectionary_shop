@@ -3,17 +3,18 @@ import Catalog from "./components/Catalog";
 import Cooking from "./components/Cooking";
 import Consultation from "./components/Consultation";
 import Reviews from "./components/Reviews";
+import Portfolio from "./components/Portfolio";
 import './App.scss'
-import Berry2 from './assets/images/berry2.png'
-import Berry1 from './assets/images/berry.png'
-import Berry3 from './assets/images/berry3.png'
-import Berry4 from './assets/images/berry4.png'
-import Berry5 from './assets/images/berry5.png'
-import Berry6 from './assets/images/berry6.png'
-import Leaf1 from './assets/images/leaf.png'
-import Leaf2 from './assets/images/leaf2.png'
-import Leaf3 from './assets/images/leaf3.png'
-import Leaf4 from './assets/images/leaf4.png'
+import Berry2 from './assets/images/paralax-images/berry2.png'
+import Berry1 from './assets/images/paralax-images/berry.png'
+import Berry3 from './assets/images/paralax-images/berry3.png'
+import Berry4 from './assets/images/paralax-images/berry4.png'
+import Berry5 from './assets/images/paralax-images/berry5.png'
+import Berry6 from './assets/images/paralax-images/berry6.png'
+import Leaf1 from './assets/images/paralax-images/leaf.png'
+import Leaf2 from './assets/images/paralax-images/leaf2.png'
+import Leaf3 from './assets/images/paralax-images/leaf3.png'
+import Leaf4 from './assets/images/paralax-images/leaf4.png'
 import { useState, useEffect } from "react";
 function App() {
   const [bgStyle, setBgStyle] = useState({});
@@ -38,6 +39,7 @@ function App() {
       <Cooking paralax={bgStyle} />
       <Consultation />
       <Reviews />
+      <Portfolio />
       <div className="paralax-items">
         <img src={Berry2} style={bgStyle} id="berry-2" alt="" />
         <img src={Berry1} style={bgStyle} id="berry-1" alt="" />
